@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: grpctest
+grpc:
+  server:
+    address: 127.0.0.1
+    port: 9898
+  client:
+      grpctest:
+        host: 127.0.0.1
+        port: 9898
+        enableKeepAlive: true
+        keepAliveWithoutCalls: true
